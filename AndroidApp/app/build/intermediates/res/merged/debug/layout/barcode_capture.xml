@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.samples.vision.barcodereader.ui.camera.CameraSourcePreview
+          android:id="@+id/preview"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:touchscreenBlocksFocus="false">
+
+        <com.google.android.gms.samples.vision.barcodereader.ui.camera.GraphicOverlay
+            android:id="@+id/graphicOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+      </com.google.android.gms.samples.vision.barcodereader.ui.camera.CameraSourcePreview>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flash"
+            android:id="@+id/flashbutton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="27dp" />
+    </RelativeLayout>
+
+</LinearLayout>
+<!-- From: file:/media/kartik/Windows/Users/canopy/Desktop/secate_backup/SecateTest_alternativeVersion_to_be_scrapped_later_on-master/app/src/main/res/layout/barcode_capture.xml -->
